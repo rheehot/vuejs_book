@@ -24,7 +24,6 @@ var vm = new Vue({
         },
         y : function(v) {
             console.log('## y 변경')
-            this.y = v;
             var result = Number(this.x) + Number(v);
             if (isNaN(result)) this.sum = 0;
             else this.sum = result;
